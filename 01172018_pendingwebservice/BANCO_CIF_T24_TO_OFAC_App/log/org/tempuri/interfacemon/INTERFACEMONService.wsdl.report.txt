@@ -1,0 +1,23 @@
+
+
+Importing file: D:\ESSENDANT\WS\IIBWS_security\INTERFACEMON\INTERFACEMONService.wsdl
+
+The WSDL import will proceed with bindings INTERFACEMONSOAP_HTTP_Binding.
+Creating wsdl schema document for file:///D:/ESSENDANT/WS/IIBWS_security/INTERFACEMON/INTERFACEMONService.wsdl.
+Parsing wsdl binding {http://tempuri.org/INTERFACEMON}INTERFACEMONSOAP_HTTP_Binding.
+Parsing wsdl binding input INTERFACEMON.
+Parsing wsdl binding output INTERFACEMON.
+Parsing wsdl binding fault INTERFACEMON_Fault.
+Processing doc style for operation INTERFACEMON.
+Populating WSDL schema INTERFACEMONService.xsd.
+Creating file INTERFACEMONService.xsd in the workspace.
+Creating file INTERFACEMON_md.xsd in the workspace.
+Copying source WSDL INTERFACEMONService.wsdl to INTERFACEMONService.wsdl.
+
+Elapsed time processing this message definition file: 0.299 seconds
+Number of warnings for this message definition file: 0
+
+
+Number of files processed: 1
+
+

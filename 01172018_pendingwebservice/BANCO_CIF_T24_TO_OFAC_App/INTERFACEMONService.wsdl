@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" name="INTERFACEMON" targetNamespace="http://tempuri.org/INTERFACEMON" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/INTERFACEMON" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:documentation>
+    <wsdl:appinfo source="WMQI_APPINFO">
+      <MRWSDLAppInfo imported="true">
+        <binding hasEncoding="false" imported="true" name="INTERFACEMONSOAP_HTTP_Binding" originalBindingStyle="document"/>
+      </MRWSDLAppInfo>
+    </wsdl:appinfo>
+  </wsdl:documentation>
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/INTERFACEMON" xmlns:mrm="http://tempuri.org/INTERFACEMON">
+<xsd:include schemaLocation="INTERFACEMON_md.xsd"/>
+</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INTERFACEMON_in">
+    <wsdl:part element="tns:CIFReplayRequest" name="CIFFileReplayRequest"/>
+  </wsdl:message>
+  <wsdl:message name="INTERFACEMON_out">
+    <wsdl:part element="tns:CIFReplayResponse" name="CIFFileReplayResponse"/>
+  </wsdl:message>
+  <wsdl:portType name="INTERFACEMONPortType">
+    <wsdl:operation name="INTERFACEMON">
+      <wsdl:input message="tns:INTERFACEMON_in" name="INTERFACEMON_Input"/>
+      <wsdl:output message="tns:INTERFACEMON_out" name="INTERFACEMON_Output"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="INTERFACEMONSOAP_HTTP_Binding" type="tns:INTERFACEMONPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="INTERFACEMON">
+      <soap:operation soapAction=""/>
+      <wsdl:input name="INTERFACEMON_Input">
+        <soap:body parts="CIFFileReplayRequest" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="INTERFACEMON_Output">
+        <soap:body parts="CIFFileReplayResponse" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="INTERFACEMON_Fault">
+        <soap:fault name="INTERFACEMON_Fault" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="INTERFACEMONSOAP_HTTP_Service">
+    <wsdl:port binding="tns:INTERFACEMONSOAP_HTTP_Binding" name="INTERFACEMONSOAP_HTTP_Port">
+      <soap:address location="http://localhost:7801/INTERFACEMONSOAP_HTTP_Service"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

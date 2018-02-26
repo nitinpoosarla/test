@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<REQUEST_MSG xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="INTERFACEMON_md.xsd">
+  <UUID>UUID</UUID>
+  <FILENAME>FILENAME</FILENAME>
+</REQUEST_MSG>

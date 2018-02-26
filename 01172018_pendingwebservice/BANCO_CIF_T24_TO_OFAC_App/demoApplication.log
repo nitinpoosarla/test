@@ -1,0 +1,14 @@
+2017-12-29 20:59:05 INFO  Demo:27 - method started
+2017-12-29 20:59:07 INFO  Demo:31 - method ended
+2017-12-29 20:59:07 INFO  Demo:35 - method generateUUID  started
+2017-12-29 20:59:07 INFO  Demo:39 - method generateUUID ended
+2017-12-29 21:13:10 INFO  Demo:16 - enter
+2017-12-29 21:13:13 INFO  Demo:18 - last
+2017-12-29 21:13:17 INFO  Demo:28 - method started
+2017-12-29 21:13:18 INFO  Demo:32 - method ended
+2017-12-29 21:13:36 INFO  Demo:36 - method generateUUID  started
+2017-12-29 21:38:34 INFO  Demo:16 - enter
+2017-12-29 21:38:35 INFO  Demo:18 - last
+2017-12-29 21:38:35 DEBUG Demo:28 - hello
+2017-12-29 21:38:35 INFO  Demo:29 - method started
+2017-12-29 21:38:37 INFO  Demo:33 - method ended

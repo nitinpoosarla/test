@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ComIbmFileInput.msgnode="ComIbmFileInput.msgnode" xmlns:ComIbmFileOutput.msgnode="ComIbmFileOutput.msgnode" xmlns:ComIbmJMSClientOutput.msgnode="ComIbmJMSClientOutput.msgnode" xmlns:ComIbmJavaCompute.msgnode="ComIbmJavaCompute.msgnode" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:eflow="http://www.ibm.com/wbi/2005/eflow" xmlns:utility="http://www.ibm.com/wbi/2005/eflow_utility" nsURI="SFTP_T24_OFAC_ASYNC_Flow.msgflow" nsPrefix="SFTP_T24_OFAC_ASYNC_Flow.msgflow">
+  <eClassifiers xmi:type="eflow:FCMComposite" name="FCMComposite_1">
+    <eSuperTypes href="http://www.ibm.com/wbi/2005/eflow#//FCMBlock"/>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.EOF" name="EOF" lowerBound="1" defaultValueLiteral="$$$">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.JDBCProvider" name="JDBCProvider" lowerBound="1" defaultValueLiteral="BancoDBJDBC">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.TableName" name="TableName" lowerBound="1" defaultValueLiteral="dbo.CIF">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.LogFilePath" name="LogFilePath" lowerBound="1" defaultValueLiteral="F:\log-config\log4j.properties">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.InvalidFileCode" name="InvalidFileCode" lowerBound="1" defaultValueLiteral="Invalid">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.InvalidFileDescription" name="InvalidFileDescription" lowerBound="1" defaultValueLiteral="File is not valid/incomplete as there was no EOF marker">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.PendingFileCode" name="PendingFileCode" lowerBound="1" defaultValueLiteral="Pending">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CompleteFileCode" name="CompleteFileCode" lowerBound="1" defaultValueLiteral="Complete">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.FailedFileCode" name="FailedFileCode" lowerBound="1" defaultValueLiteral="Failed">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.NotifiedFileCode" name="NotifiedFileCode" lowerBound="1" defaultValueLiteral="Notified">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.AcceptedFileCode" name="AcceptedFileCode" lowerBound="1" defaultValueLiteral="Accepted">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.PendingFileDescription" name="PendingFileDescription" lowerBound="1" defaultValueLiteral="Uploaded to T24 and Pending Processing">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.CompleteFileDescription" name="CompleteFileDescription" lowerBound="1" defaultValueLiteral="Processed by FCM">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.FailedFileDescription" name="FailedFileDescription" lowerBound="1" defaultValueLiteral="T24 failed to process">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.NotifiedFileDescription" name="NotifiedFileDescription" lowerBound="1" defaultValueLiteral="Notified to Listener to process the file">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.AcceptedFileDescription" name="AcceptedFileDescription" lowerBound="1" defaultValueLiteral="File is valid and Accepted for futher processing">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.FilePostFailCode" name="FilePostFailCode" defaultValueLiteral="SFTP POST FAILED">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.FilePostFailDescription" name="FilePostFailDescription" defaultValueLiteral="File Transfer failed to T24">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <eStructuralFeatures xmi:type="ecore:EAttribute" xmi:id="Property.JMSFilePostMessageType" name="JMSFilePostMessageType" lowerBound="1" defaultValueLiteral="FileProcessNotification">
+      <eType xmi:type="ecore:EDataType" href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    </eStructuralFeatures>
+    <translation xmi:type="utility:TranslatableString" key="SFTP_T24_OFAC_ASYNC_Flow" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+    <colorGraphic16 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/BANCO_CIF_T24_TO_OFAC_App/icons/full/obj16/SFTP_T24_OFAC_ASYNC_Flow.gif"/>
+    <colorGraphic32 xmi:type="utility:GIFFileGraphic" resourceName="platform:/plugin/BANCO_CIF_T24_TO_OFAC_App/icons/full/obj30/SFTP_T24_OFAC_ASYNC_Flow.gif"/>
+    <composition>
+      <nodes xmi:type="ComIbmFileInput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_1" location="143,276" inputDirectory="F:\projectexternal\FileIn" filenamePattern="input*" processedFileAction="moveToArchiveWithTimestamp" messageDomainProperty="BLOB">
+        <translation xmi:type="utility:ConstantString" string="SFTP_T24_IN"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_2" location="311,290" javaClass="com.SFTP_T24_TO_OFAC.SFTP_T24_OFAC_ASYNC_Flow_SFTP_T24_OFAC_JavaCompute">
+        <translation xmi:type="utility:ConstantString" string="Validatedata"/>
+      </nodes>
+      <nodes xmi:type="ComIbmFileOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_3" location="498,293" outputDirectory="F:\projectexternal\FileOut" outputFilename="output*" outputMode="archiveAndReplaceWithTimestamp" replaceDuplicateArchives="true" failedFileAction="moveToFailureWithTimestamp">
+        <translation xmi:type="utility:ConstantString" string="File_Out_OFAC"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_5" location="668,326" javaClass="com.SFTP_T24_TO_OFAC.SFTP_T24_OFAC_ASYNC_Flow_FilePostNotification">
+        <translation xmi:type="utility:ConstantString" string="FilePostNotification"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJMSClientOutput.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_6" location="909,274" destinationQueueName="jmsout" locationJndiBindings="file:/C:/jmsbindings/" connectionFactoryName="QCF">
+        <translation xmi:type="utility:ConstantString" string="JMS_FilePostNotification"/>
+      </nodes>
+      <nodes xmi:type="ComIbmJavaCompute.msgnode:FCMComposite_1" xmi:id="FCMComposite_1_9" location="629,178" javaClass="com.SFTP_T24_TO_OFAC.SFTP_T24_OFAC_ASYNC_Flow_SFTPDOWN_DBPOST">
+        <translation xmi:type="utility:ConstantString" string="Failed_File_Post"/>
+      </nodes>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_1" targetNode="FCMComposite_1_2" sourceNode="FCMComposite_1_1" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_2" targetNode="FCMComposite_1_3" sourceNode="FCMComposite_1_2" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_5" targetNode="FCMComposite_1_6" sourceNode="FCMComposite_1_5" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_6" targetNode="FCMComposite_1_9" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.failure" targetTerminalName="InTerminal.in"/>
+      <connections xmi:type="eflow:FCMConnection" xmi:id="FCMConnection_3" targetNode="FCMComposite_1_5" sourceNode="FCMComposite_1_3" sourceTerminalName="OutTerminal.out" targetTerminalName="InTerminal.in"/>
+    </composition>
+    <propertyOrganizer>
+      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.EOF">
+        <propertyName xmi:type="utility:TranslatableString" key="Property.EOF" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+        <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.JDBCProvider">
+          <propertyName xmi:type="utility:TranslatableString" key="Property.JDBCProvider" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+          <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.TableName">
+            <propertyName xmi:type="utility:TranslatableString" key="Property.TableName" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+            <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.LogFilePath">
+              <propertyName xmi:type="utility:TranslatableString" key="Property.LogFilePath" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+              <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.InvalidFileCode">
+                <propertyName xmi:type="utility:TranslatableString" key="Property.InvalidFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.InvalidFileDescription">
+                  <propertyName xmi:type="utility:TranslatableString" key="Property.InvalidFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                  <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.PendingFileCode">
+                    <propertyName xmi:type="utility:TranslatableString" key="Property.PendingFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                    <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CompleteFileCode">
+                      <propertyName xmi:type="utility:TranslatableString" key="Property.CompleteFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.FailedFileCode">
+                        <propertyName xmi:type="utility:TranslatableString" key="Property.FailedFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                        <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.NotifiedFileCode">
+                          <propertyName xmi:type="utility:TranslatableString" key="Property.NotifiedFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                          <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.AcceptedFileCode">
+                            <propertyName xmi:type="utility:TranslatableString" key="Property.AcceptedFileCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                            <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.PendingFileDescription">
+                              <propertyName xmi:type="utility:TranslatableString" key="Property.PendingFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                              <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.CompleteFileDescription">
+                                <propertyName xmi:type="utility:TranslatableString" key="Property.CompleteFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.FailedFileDescription">
+                                  <propertyName xmi:type="utility:TranslatableString" key="Property.FailedFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                  <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.NotifiedFileDescription">
+                                    <propertyName xmi:type="utility:TranslatableString" key="Property.NotifiedFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                    <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.AcceptedFileDescription">
+                                      <propertyName xmi:type="utility:TranslatableString" key="Property.AcceptedFileDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                      <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.FilePostFailCode">
+                                        <propertyName xmi:type="utility:TranslatableString" key="Property.FilePostFailCode" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                        <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.FilePostFailDescription">
+                                          <propertyName xmi:type="utility:TranslatableString" key="Property.FilePostFailDescription" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                          <propertyDescriptor groupName="Group.Basic" configurable="true" userDefined="true" describedAttribute="Property.JMSFilePostMessageType">
+                                            <propertyName xmi:type="utility:TranslatableString" key="Property.JMSFilePostMessageType" bundleName="SFTP_T24_OFAC_ASYNC_Flow" pluginId="BANCO_CIF_T24_TO_OFAC_App"/>
+                                          </propertyDescriptor>
+                                        </propertyDescriptor>
+                                      </propertyDescriptor>
+                                    </propertyDescriptor>
+                                  </propertyDescriptor>
+                                </propertyDescriptor>
+                              </propertyDescriptor>
+                            </propertyDescriptor>
+                          </propertyDescriptor>
+                        </propertyDescriptor>
+                      </propertyDescriptor>
+                    </propertyDescriptor>
+                  </propertyDescriptor>
+                </propertyDescriptor>
+              </propertyDescriptor>
+            </propertyDescriptor>
+          </propertyDescriptor>
+        </propertyDescriptor>
+      </propertyDescriptor>
+    </propertyOrganizer>
+    <stickyBoard/>
+  </eClassifiers>
+</ecore:EPackage>
